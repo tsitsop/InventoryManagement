@@ -7,8 +7,14 @@ from django.db import models
 class Inventory(models.Model):
 	name = models.CharField(max_length=20)
 
+	def __str__(self):
+		return self.name
+
 class Computer(models.Model):
 	inventory = models.ForeignKey(Inventory, on_delete=models.CASCADE)
 	manufacturer = models.CharField(max_length=20)
 	serial_number = models.IntegerField(default=0)
 	comments = models.CharField(max_length=200)
+
+	def __str__(self):
+		return self.manufacturer

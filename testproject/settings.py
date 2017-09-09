@@ -27,17 +27,20 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CRISPY_TEMPLATE_PACK = 'bootstrap'
 
 # Application definition
 
 INSTALLED_APPS = [
-    'inventoryManagement.apps.InventorymanagementConfig',
+#    'inventoryManagement.apps.InventorymanagementConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'inventoryManagement',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [

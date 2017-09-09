@@ -4,3 +4,5 @@
 */migrations/
 # ignore sqlite
 db.sqlite3
+# ignore node stuff
+inventoryManagement/node_modules/

@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
+from inventoryManagement.views import InventoryManagementView
 
 urlpatterns = [
-	url(r'^inventoryManagement/', include('inventoryManagement.urls')),
+	url(r'^inventoryManagement/$', InventoryManagementView.as_view()),
+	# url(r'^inventoryManagement/', include('inventoryManagement.urls')),
     url(r'^admin/', admin.site.urls),
 ]
