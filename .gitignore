@@ -1,0 +1,6 @@
+# ignore all pyc files
+*/*.pyc
+# ignore all migrations
+*/migrations/
+# ignore sqlite
+db.sqlite3
